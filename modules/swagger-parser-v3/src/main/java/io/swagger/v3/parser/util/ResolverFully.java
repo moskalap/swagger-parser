@@ -493,6 +493,12 @@ public class ResolverFully {
             if (resolved.getEnum() != null ){
                 targetSchema.setEnum(resolved.getEnum());
             }
+            if(resolved.getTitle() != null){
+                targetSchema.setTitle(resolved.getTitle());
+            }
+            if(resolved.getDescription() != null){
+                targetSchema.setDescription(resolved.getDescription());
+            }
             if (resolved.getExample() != null) {
                 examples.add(resolved.getExample());
             }
